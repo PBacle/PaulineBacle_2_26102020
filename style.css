@@ -60,3 +60,41 @@ a#login:hover{
     text-shadow: 3px 3px 3px rgba(0,0,0,0.3);
 }
 
+/* FOOTER */
+footer{
+	width: 100%;
+	background-color: #F2F2F2; /*gris #DEEBFF:bleu clair #0065FC:bleu; */
+	display: flex;
+	justify-content: space-around;
+	margin-top: 30px;	
+}
+
+footer div{
+	flex-basis: 0;
+	padding: 30px;
+	flex:1;
+}
+
+footer h3{
+	padding-bottom: 15px;
+	white-space: nowrap;
+	margin: 0;
+}
+
+footer ul{
+	white-space: nowrap;
+ 	list-style-type: none;
+ 	padding:0;
+ 	margin:0;
+}
+
+footer li + li{
+	padding-top: 10px;
+}
+
+
+footer a{
+    text-decoration: none;
+    color:black;
+}
+
