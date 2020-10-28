@@ -164,3 +164,22 @@ footer a{
  	border-right-style: outset;
  	border-bottom-style: outset;
 }
+
+#infosResults:before{
+	color:#0065FC;
+	border-radius: 50%;
+	border:1px #606061 solid ; 
+	margin-right: 10px;
+    font-family: 'FontAwesome';
+	content: "\f129";
+	display: inline-block;
+	line-height: 30px;
+	height: 30px;width: 30px;
+	font-size: 0.8em;
+	text-align: center;
+}
+
+#infosResults{
+	line-height: 30px;
+	vertical-align: center;
+}
