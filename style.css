@@ -183,3 +183,73 @@ footer a{
 	line-height: 30px;
 	vertical-align: center;
 }
+
+/* CONTENT RESULTS */
+
+h2,#more{
+	padding: 30px 0 30px 0;
+	margin:0;
+}
+
+#resultsSearch {
+	display: flex;
+	flex-direction: column;
+}
+
+#resultsSearch a {
+    text-decoration: none;
+    color:black;
+  }
+
+  
+#resultsSearchActivities {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+#resultsSearchActivities > div {
+	display: grid;
+	grid-gap: 30px;
+	grid-template-columns: repeat(4,1fr);
+	margin-top: -15px;
+}
+
+.activity {
+	box-sizing: border-box;
+	height: 300px;
+	background-color: white;
+	box-shadow: 2px 5px 5px rgba(0,0,0,0.1); 
+	border-radius: 15px;
+	border : 6px white solid;
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+
+.activity h3 {
+	box-sizing: border-box;
+	margin:auto;
+	max-height: 30px;
+	padding-left : 15px;
+	white-space: nowrap;
+	width: 100%;
+}
+
+.big{
+	grid-row:1/3;
+	height: 330px;
+}
+
+.col3{
+	grid-column: 3;
+}
+
+.activity img{
+    display: block;
+	border-radius: 10px 10px 0  0;
+	object-fit: cover;
+	width:100%;
+	height: calc(100% - 60px);
+}
