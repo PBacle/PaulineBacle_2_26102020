@@ -243,6 +243,55 @@ h2,#more{
 	width: 100%;
 }
 
+#more {
+	font-weight: bold;
+}
+
+
+.rating {
+  padding:5px 0 5px 0  ;
+  unicode-bidi: bidi-override;
+  color: #c5c5c5;
+  font-size: 1.5em;
+  width: max-content;
+  margin:auto;
+  position: relative;
+} 
+.rating::before { 
+  content: '★★★★★';
+}
+
+[title="0"]::after {
+  width: 0%;
+}
+[title="1"]::after {
+  width: 20%;
+}
+[title="2"]::after {
+  width: 40%;
+}
+[title="3"]::after {
+  width: 60%;
+}
+[title="4"]::after {
+  width: 80%;
+}
+[title="5"]::after {
+  width: 100%;
+}
+
+.rating::after {
+  padding:5px 0 5px 0  ;
+  color: blue;
+  content: '★★★★★';
+  position: absolute;
+  z-index: 1;
+  display: block;
+  left: 0;
+  top:0;
+  width: attr(rating);
+  overflow: hidden;
+}
 
 
 #resultsSearchActivities {
@@ -296,3 +345,4 @@ h2,#more{
 	width:100%;
 	height: calc(100% - 60px);
 }
+
