@@ -426,10 +426,11 @@ h2,#more{
   z-index: 1;
   display: block;
   left: 0;
-  top:0;
+  top:0;mo
   width: attr(rating);
   overflow: hidden;
 }
+
 
 aside .fas{
 	font-size : 1.5em;
@@ -473,7 +474,16 @@ div.mostPopular img {
 	border-radius: 10px 0 0 10px;
 }
 
-
+div.mostPopular div.info{
+	white-space: normal;
+	height: 180px;
+	width: 50%;
+	padding:10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin:0;
+}
 
 #resultsSearchActivities {
 	display: flex;
