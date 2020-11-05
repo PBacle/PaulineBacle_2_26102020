@@ -495,7 +495,6 @@ div.mostPopular div.info{
 	margin:auto;
 }
 
-
 #resultsSearchActivities {
 	display: flex;
 	flex-direction: column;
@@ -511,16 +510,12 @@ div.mostPopular div.info{
 
 .activity {
 	box-sizing: border-box;
-	height: 300px;
-	background-color: white;
-	box-shadow: 2px 5px 5px rgba(0,0,0,0.1); 
-	border-radius: 15px;
-	border : 6px white solid;
+	height: 150px;
 	display:flex;
 	flex-direction: column;
 	justify-content: space-between;
+	border:none;
 }
-
 
 .activity h3 {
 	box-sizing: border-box;
