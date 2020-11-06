@@ -543,3 +543,94 @@ div.mostPopular div.info{
 	height: calc(100% - 60px);
 }
 
+
+
+@media all and ((max-device-width: 480px) or (max-width: 650px)) {
+	#resultsSearchHotels aside > div:not(.title){
+		flex-direction: column;
+	}
+
+	nav{
+		font-size: 1.2em;
+	}
+
+
+	nav ul{
+		position:absolute;
+		left:0;
+		top:100px;
+		width: 100vw;
+		height:40px;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+
+	nav ul li {
+		padding: 0;
+		width:50%;
+		text-align: center;
+	}
+
+	nav ul a {
+		padding: 0;
+		width: 100%;
+		display: inline-block;
+		height: 40px;
+		box-sizing: border-box;
+		border-bottom: 4px solid #F2F2F2;
+	}
+
+	nav ul a:hover {
+		border-top: none;
+		border-bottom: 4px solid #0065FC;
+	}
+
+
+	header{
+		margin-bottom: 70px;
+	}
+
+	#content h1{
+		padding-right: 50px;
+	}
+
+	footer{
+		flex-direction: column;
+	}
+
+
+	#searchIcon input[type="button"]:before{
+	    font-family: 'FontAwesome';
+		color: #0065FC;
+		content: "\f002";
+		background-color: red;
+		vertical-align: middle;
+		display: inline-block;
+		width: 30px;
+		height: 30px;
+		border-radius: 10px;
+		text-align: center;
+	}
+
+	#resultsSearchActivities div{
+		display: flex;
+		flex-direction: column; 
+	}
+
+	.activity{
+		width: calc(100vw - 70px);
+		height:200px;
+	}
+
+	#resultsSearchHotels section{
+		background-color: white;
+		padding-left:0;
+		padding-right: 0;
+	}
+
+
+	#resultsSearchHotels section > div {
+		grid-template-columns: 1fr;
+4}
+}
