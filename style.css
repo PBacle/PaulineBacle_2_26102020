@@ -545,6 +545,144 @@ div.mostPopular div.info{
 
 
 
+
+
+@media all and ((max-device-width: 480px) or (max-width: 1350px)) {
+
+	#resultsSearchHotels section > div {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	div.mostPopular img {
+		height: 300px;
+	}
+
+	div.mostPopular div.info{
+		height: 280px;
+	}
+}
+
+
+@media all and ((max-device-width: 480px) or (max-width: 850px)) {
+	#filters{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	#filters form{
+		flex-wrap: wrap;
+		margin-top: -15px;
+	}
+
+	.filterSelector{
+		margin-top: 30px;
+	}
+}
+
+@media all and ((max-device-width: 480px) or (max-width: 1275px)) {
+	#resultsSearchActivities div{
+		grid-template-columns: 1fr 1fr 1fr; 
+	}
+
+	.activity{
+		width:calc(33vw - 40px);
+		height: 300px;
+	}
+
+	.col3{
+		grid-column: 1;
+	}
+
+	.big{
+		grid-row: 1;
+	}
+}
+
+@media all and ((max-device-width: 480px) or (max-width: 975px)) {
+	#resultsSearchActivities div{
+		grid-template-columns: 1fr 1fr ; 
+	}
+
+	.activity{
+		width:calc(50vw - 50px);
+		height: 300px;
+	}
+
+	#resultsSearchHotels{
+		flex-direction: column-reverse;
+	}
+
+	#resultsSearchHotels section{
+		margin-right: 0;
+		margin-top: 30px;
+	}
+
+	#resultsSearchHotels aside{
+		border-radius: 0;
+		margin-left: -30px;
+		margin-right: -30px;
+	}
+
+	#resultsSearchHotels aside > div:not(.title){
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+	
+	.mostPopular{
+		min-width: 300px;
+		margin-right: 15px;
+		margin-left: 15px;
+
+	}
+
+	.mostPopular,
+	div.mostPopular img {
+		height: 150px;
+	}
+
+	div.mostPopular div.info{
+		height: 130px;
+		min-width: 60%;
+	}
+
+	div.mostPopular img {
+		min-width: 40%;
+	}
+
+	.mostPopular:last-child{
+		max-width: calc(50vw - 60px);
+		margin:auto;
+		margin-bottom: 30px;
+	}
+
+	.rating{
+		margin:0;
+	}
+
+}
+
+@media all and ((max-device-width: 480px) or (max-width: 700px)) {
+	footer{
+		flex-wrap: wrap;
+	}
+
+	footer div{
+		flex-grow: 0;
+	}
+
+	#resultsSearchHotels aside > div:not(.title){
+		flex-direction: column;
+	}
+
+	.mostPopular:last-child{
+		min-width: calc(100vw - 90px);
+	}
+
+}
+
+
 @media all and ((max-device-width: 480px) or (max-width: 650px)) {
 	#resultsSearchHotels aside > div:not(.title){
 		flex-direction: column;
@@ -598,6 +736,7 @@ div.mostPopular div.info{
 	footer{
 		flex-direction: column;
 	}
+
 
 
 	#searchIcon input[type="button"]:before{
