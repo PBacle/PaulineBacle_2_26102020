@@ -1,0 +1,8 @@
+Contents:
+- main.html
+- style.css
+PICTURES
+PICTURES/LOGO
+PICTURES/LOGO/favicon
+PICTURES/HOTELS
+PICTURES/ACTIVITIES
