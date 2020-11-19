@@ -416,7 +416,7 @@ h2,#more{
 
 .rating::after {
   padding:5px 0 5px 0  ;
-  color: blue;
+  color: #0065FC;
   content: '★★★★★';
   position: absolute;
   z-index: 1;
@@ -453,6 +453,7 @@ div.mostPopular{
 	background-color: white;
 	border-radius: 15px;
 	border : 6px white solid;	
+	height: 200px;
 	margin-bottom:30px;
 	flex:1;
 }
@@ -533,7 +534,9 @@ div.mostPopular div.info{
 /*******************/
 /*  RESPONSIVITE  */
 
-@media all and ((max-device-width: 480px) or (max-width: 1350px)) {
+@media screen and (
+				((max-device-width: 480px) and (min-device-width: 320px))
+				or (max-width: 1350px) ) {
 
 	#resultsSearchHotels section > div {
 		grid-template-columns: 1fr 1fr;
@@ -549,7 +552,7 @@ div.mostPopular div.info{
 }
 
 
-@media all and ((max-device-width: 480px) or (max-width: 850px)) {
+@media screen and ((max-device-width: 480px) or (max-width: 850px)) {
 	#filters{
 		flex-direction: column;
 		align-items: flex-start;
@@ -565,7 +568,7 @@ div.mostPopular div.info{
 	}
 }
 
-@media all and ((max-device-width: 480px) or (max-width: 1275px)) {
+@media screen and ((max-device-width: 480px) or (max-width: 1275px)) {
 	#resultsSearchActivities div{
 		grid-template-columns: 1fr 1fr 1fr; 
 	}
@@ -584,7 +587,7 @@ div.mostPopular div.info{
 	}
 }
 
-@media all and ((max-device-width: 480px) or (max-width: 975px)) {
+@media screen and ((max-device-width: 480px) or (max-width: 975px)) {
 	#resultsSearchActivities div{
 		grid-template-columns: 1fr 1fr ; 
 	}
@@ -649,7 +652,7 @@ div.mostPopular div.info{
 
 }
 
-@media all and ((max-device-width: 480px) or (max-width: 700px)) {
+@media screen and ((max-device-width: 480px) or (max-width: 700px)) {
 	footer{
 		flex-wrap: wrap;
 	}
@@ -669,7 +672,7 @@ div.mostPopular div.info{
 }
 
 
-@media all and ((max-device-width: 480px) or (max-width: 650px)) {
+@media screen and ((max-device-width: 480px) or (max-width: 650px)) {
 	#resultsSearchHotels aside > div:not(.title){
 		flex-direction: column;
 	}
@@ -757,5 +760,5 @@ div.mostPopular div.info{
 
 	#resultsSearchHotels section > div {
 		grid-template-columns: 1fr;
-4}
+	}
 }
