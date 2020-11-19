@@ -1,5 +1,5 @@
 Contents:
-- main.html
+- index.html
 - style.css
 PICTURES
 PICTURES/LOGO
