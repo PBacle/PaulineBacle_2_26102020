@@ -207,7 +207,7 @@ button:hover {
 	margin: 0;
 }
 
-#filters form {
+#filters > div {
 	display: flex;
 	margin:auto 0 ;
 }
@@ -593,7 +593,7 @@ div.mostPopular div.info{
 		align-items: flex-start;
 	}
 
-	#filters form{
+	#filters > div{
 		flex-wrap: wrap;
 		margin-top: -15px;
 	}
