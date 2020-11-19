@@ -176,7 +176,6 @@ button:hover {
 	border-bottom-style: outset;
 }
 
-
 #searchIcon {
 	display: flex;
 }
@@ -572,7 +571,6 @@ div.mostPopular div.info{
 /*  RESPONSIVITE  */
 
 @media screen and (max-width: 1350px ) {
-
 	#resultsSearchHotels section > div {
 		grid-template-columns: 1fr 1fr;
 	}
@@ -708,7 +706,7 @@ div.mostPopular div.info{
 }
 
 
-@media screen and (max-width: 650px) {
+@media all and ((max-device-width: 480px) or (max-width: 650px)) {
 	#resultsSearchHotels aside > div:not(.title){
 		flex-direction: column;
 	}
@@ -716,7 +714,6 @@ div.mostPopular div.info{
 	nav{
 		font-size: 1.2em;
 	}
-
 	nav ul{
 		position:absolute;
 		left:0;
@@ -774,7 +771,6 @@ div.mostPopular div.info{
 		border-radius: 10px;
 		text-align: center;
 	}
-
 
 	#resultsSearchActivities div{
 		display: flex;
