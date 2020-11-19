@@ -212,9 +212,13 @@ button:hover {
 	margin:auto 0 ;
 }
 
+.filterSelector{
+	position: relative;
+}
 [type="checkbox"] {
   position: absolute;
-  left: -9999px;
+  left: 40%;top:40%;
+  opacity:0;
 }
 
 .filterSelector label{
@@ -419,7 +423,6 @@ h2,#more{
 /*RATINGS*/
 .rating {
   padding:5px 0 5px 0  ;
-  unicode-bidi: bidi-override;
   color: #c5c5c5;
   font-size: 1.5em;
   width: max-content;
@@ -457,9 +460,7 @@ h2,#more{
   position: absolute;
   z-index: 1;
   display: block;
-  left: 0;
-  top:0;
-  width: attr(rating);
+  left: 0; top:0;
   overflow: hidden;
 }
 
@@ -706,7 +707,7 @@ div.mostPopular div.info{
 }
 
 
-@media all and ((max-device-width: 480px) or (max-width: 650px)) {
+@media all and (max-width: 650px) {
 	#resultsSearchHotels aside > div:not(.title){
 		flex-direction: column;
 	}

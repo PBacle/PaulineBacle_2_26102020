@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>Reservia - Trouvez un h&eacute;bergement et des activit&eacute;s parfaites pour des vacances de r&ecirc;vzs !</title>
+	<meta name="language" content="fr-FR" />
 
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://kit.fontawesome.com/ead44a5493.js" crossorigin="anonymous"></script>
@@ -34,7 +35,7 @@
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
 
-        <form action="" method="POST" >
+        <form >
         	<div id="searchIcon">
 	          <span  class="fas fa-map-marker-alt"></span>
 	          <input type="text" name="city" value="Marseille, France">
@@ -46,7 +47,7 @@
          	<div id="filters">
 	          <h3>Filtres</h3> 
 	            <div class="filterSelector">
-	              <input type="checkbox" id="Economique" name="Economique" value="Economique" displ>
+	              <input type="checkbox" id="Economique" name="Economique" value="Economique">
 	              <label for="Economique">Economique</label>
 	            </div>
 	            <div class="filterSelector">
@@ -140,12 +141,13 @@
             </div>
             <a href="#" id="more">Afficher plus</a>
           </section>
+
           <aside>
             <div class="title">
               <h2>Les plus populaires</h2>
               <span class="fas fa-chart-line"></span>
             </div>
-              <div>
+            <div>
                 <div class="hotel mostPopular">
                   <a href="#">
                     <img src="PICTURES/HOTELS/HotelLeSoleilDuMatin.jpg" alt="Photo_HotelLeSoleilDuMatin">
@@ -190,7 +192,7 @@
                    </div>
                   </a>
                 </div>            
-              </div>
+            </div>
           </aside>
         </section>
 
@@ -201,6 +203,11 @@
                 <img src="PICTURES/ACTIVITIES/VieuxPort.jpg" alt="Photo_VieuxPort">
                 <h3>Vieux Port</h3>
             </a>
+
+            <a href="#" class="activity big col3">
+                <img src="PICTURES/ACTIVITIES/ParcNationalDesCalanques.jpg" alt="Photo_ParcNationalDesCalanques">
+                <h3>Parc National des Calanques</h3>
+             </a>
             
             <a  href="#" class="activity ">
                 <img src="PICTURES/ACTIVITIES/FortDePomegues.jpg" alt="Photo_FortDePomegues">
@@ -212,10 +219,6 @@
                 <h3>Notre-Dame-de-la-Garde</h3>
               </a>
             
-            <a href="#" class="activity big col3">
-                <img src="PICTURES/ACTIVITIES/ParcNationalDesCalanques.jpg" alt="Photo_ParcNationalDesCalanques">
-                <h3>Parc National des Calanques</h3>
-             </a>
             
             <a href="#" class="activity">
                 <img src="PICTURES/ACTIVITIES/IlesDuFrioul.jpg" alt="Photo_IlesDuFrioul">
