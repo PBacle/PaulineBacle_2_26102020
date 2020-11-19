@@ -2,8 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Reservia - Trouvez un h&eacute;bergement et des activit&eacute;s parfaites pour des vacances de r&ecirc;vzs !</title>
-
+    <title>Reservia - Trouvez un h&eacute;bergement et des activit&eacute;s parfaites pour des vacances de r&ecirc;ves !</title>
+	<meta name="language" content="fr-FR" />
+	<meta name=”viewport” content=”width=device-width, initial-scale=1″>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://kit.fontawesome.com/ead44a5493.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet"> 
@@ -34,36 +35,37 @@
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
 
-        <form id="searchIcon">
-          <span  class="fas fa-map-marker-alt"></span>
-          <input type="text" name="city" value="Marseille, France">
-          <button type="submit">
-          	<span>Rechercher</span>
-    		<span class="fas fa-search"></span>
-    		</button>
+        <form >
+        	<div id="searchIcon">
+	          <span  class="fas fa-map-marker-alt"></span>
+	          <input type="text" name="city" value="Marseille, France">
+	          <button type="submit">
+	          	<span>Rechercher</span>
+	    		<span class="fas fa-search"></span>
+	    	  </button>
+	    	</div>
+         	<div id="filters">
+	          <h3>Filtres</h3> 
+	            <div class="filterSelector">
+	              <input type="checkbox" id="Economique" name="Economique" value="Economique">
+	              <label for="Economique">Economique</label>
+	            </div>
+	            <div class="filterSelector">
+	              <input type="checkbox" id="Familial" name="Familial" value="Familial">
+	              <label for="Familial">Familial</label>
+	            </div>
+	            <div class="filterSelector">
+	              <input type="checkbox" id="Romantique" name="Romantique" value="Romantique">
+	              <label for="Romantique">Romantique</label>
+	            </div>
+	            <div class="filterSelector">
+	              <input type="checkbox" id="Animaux" name="Animaux" value="Animaux">
+	              <label for="Animaux">Animaux autorisés</label>
+	            </div> 
+          	</div>
         </form>
-        <div id="filters">
-          <h3>Filtres</h3> 
-          <form >
-            <div class="filterSelector">
-              <input type="checkbox" id="Economique" name="Economique" value="Economique" displ>
-              <label for="Economique">Economique</label>
-            </div>
-            <div class="filterSelector">
-              <input type="checkbox" id="Familial" name="Familial" value="Familial">
-              <label for="Familial">Familial</label>
-            </div>
-            <div class="filterSelector">
-              <input type="checkbox" id="Romantique" name="Romantique" value="Romantique">
-              <label for="Romantique">Romantique</label>
-            </div>
-            <div class="filterSelector">
-              <input type="checkbox" id="Animaux" name="Animaux" value="Animaux">
-              <label for="Animaux">Animaux autorisés</label>
-            </div>
-          </form>
-        </div>
         <p id="infosResults">Plus de 500 logements sont disponibles dans cette ville</p>
+
       </section>
 
       <section id="resultsSearch">
@@ -139,12 +141,13 @@
             </div>
             <a href="#" id="more">Afficher plus</a>
           </section>
+
           <aside>
             <div class="title">
               <h2>Les plus populaires</h2>
               <span class="fas fa-chart-line"></span>
             </div>
-              <div>
+            <div>
                 <div class="hotel mostPopular">
                   <a href="#">
                     <img src="PICTURES/HOTELS/HotelLeSoleilDuMatin.jpg" alt="Photo_HotelLeSoleilDuMatin">
@@ -189,7 +192,7 @@
                    </div>
                   </a>
                 </div>            
-              </div>
+            </div>
           </aside>
         </section>
 
@@ -200,6 +203,11 @@
                 <img src="PICTURES/ACTIVITIES/VieuxPort.jpg" alt="Photo_VieuxPort">
                 <h3>Vieux Port</h3>
             </a>
+
+            <a href="#" class="activity big col3">
+                <img src="PICTURES/ACTIVITIES/ParcNationalDesCalanques.jpg" alt="Photo_ParcNationalDesCalanques">
+                <h3>Parc National des Calanques</h3>
+             </a>
             
             <a  href="#" class="activity ">
                 <img src="PICTURES/ACTIVITIES/FortDePomegues.jpg" alt="Photo_FortDePomegues">
@@ -211,10 +219,6 @@
                 <h3>Notre-Dame-de-la-Garde</h3>
               </a>
             
-            <a href="#" class="activity big col3">
-                <img src="PICTURES/ACTIVITIES/ParcNationalDesCalanques.jpg" alt="Photo_ParcNationalDesCalanques">
-                <h3>Parc National des Calanques</h3>
-             </a>
             
             <a href="#" class="activity">
                 <img src="PICTURES/ACTIVITIES/IlesDuFrioul.jpg" alt="Photo_IlesDuFrioul">
