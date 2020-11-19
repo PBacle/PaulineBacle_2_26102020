@@ -130,6 +130,8 @@ input[type="text"]{
 	border-top:1px #F2F2F2 solid;
 	border-bottom:1px #F2F2F2 solid;
 	height: 2.2em;
+	min-width: 250px;
+
 }
 
 button{
@@ -155,6 +157,7 @@ button span.fas{
 
 	input[type="text"]{
 		min-width: calc(100% - 35px - 35px - 30px + 5px + 5px);
+		max-width: 50%;
 	}
 	button {
 		min-width: 35px;
