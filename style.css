@@ -534,14 +534,13 @@ div.mostPopular div.info{
 /*******************/
 /*  RESPONSIVITE  */
 
-@media screen and (
-				((max-device-width: 480px) and (min-device-width: 320px))
-				or (max-width: 1350px) ) {
+@media screen and (max-width: 1350px ) {
 
 	#resultsSearchHotels section > div {
 		grid-template-columns: 1fr 1fr;
 	}
 
+	div.mostPopular,
 	div.mostPopular img {
 		height: 300px;
 	}
@@ -552,7 +551,7 @@ div.mostPopular div.info{
 }
 
 
-@media screen and ((max-device-width: 480px) or (max-width: 850px)) {
+@media screen and (max-width: 850px) {
 	#filters{
 		flex-direction: column;
 		align-items: flex-start;
@@ -568,7 +567,7 @@ div.mostPopular div.info{
 	}
 }
 
-@media screen and ((max-device-width: 480px) or (max-width: 1275px)) {
+@media screen and (max-width: 1275px) {
 	#resultsSearchActivities div{
 		grid-template-columns: 1fr 1fr 1fr; 
 	}
@@ -587,7 +586,7 @@ div.mostPopular div.info{
 	}
 }
 
-@media screen and ((max-device-width: 480px) or (max-width: 975px)) {
+@media screen and (max-width: 975px) {
 	#resultsSearchActivities div{
 		grid-template-columns: 1fr 1fr ; 
 	}
@@ -626,7 +625,7 @@ div.mostPopular div.info{
 
 	}
 
-	.mostPopular,
+	div.mostPopular,
 	div.mostPopular img {
 		height: 150px;
 	}
@@ -652,7 +651,7 @@ div.mostPopular div.info{
 
 }
 
-@media screen and ((max-device-width: 480px) or (max-width: 700px)) {
+@media screen and (max-width: 700px) {
 	footer{
 		flex-wrap: wrap;
 	}
@@ -672,7 +671,7 @@ div.mostPopular div.info{
 }
 
 
-@media screen and ((max-device-width: 480px) or (max-width: 650px)) {
+@media screen and (max-width: 650px) {
 	#resultsSearchHotels aside > div:not(.title){
 		flex-direction: column;
 	}
@@ -681,12 +680,11 @@ div.mostPopular div.info{
 		font-size: 1.2em;
 	}
 
-
 	nav ul{
 		position:absolute;
 		left:0;
 		top:100px;
-		width: 100vw;
+		width: 100%;
 		height:40px;
 		padding: 0;
 		box-sizing: border-box;
@@ -695,7 +693,8 @@ div.mostPopular div.info{
 
 	nav ul li {
 		padding: 0;
-		width:50%;
+		max-width:50%;
+		flex:1;
 		text-align: center;
 	}
 
@@ -725,7 +724,6 @@ div.mostPopular div.info{
 	footer{
 		flex-direction: column;
 	}
-
 
 
 	#searchIcon input[type="button"]:before{
