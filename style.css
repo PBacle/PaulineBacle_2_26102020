@@ -17,6 +17,7 @@ a{
 
 /*******************/
 /*     HEADER      */
+
 header{
 	margin:0 50px ;
 	display: flex;
@@ -35,15 +36,15 @@ nav{
 	box-sizing: border-box;
 }
 
-nav > *{
-	min-height: 100%;
-}
-
 nav ul{
 	display: flex;
  	list-style-type: none;
  	font-size: 1em;
  	margin-bottom: 15px;
+}
+
+nav > *{
+	min-height: 100%;
 }
 
 nav li {
@@ -215,6 +216,7 @@ button:hover {
 }
 
 /*FILTERS*/
+
 #filters{
 	display: flex;
 	margin:30px 0 30px 0;
@@ -234,6 +236,7 @@ button:hover {
 .filterSelector{
 	position: relative;
 }
+
 [type="checkbox"] {
   position: absolute;
   left: 40%;top:40%;
@@ -329,10 +332,6 @@ input#Animaux:checked + label[for="Animaux"]:after {
 
 input:checked + label{
 	color:white;
-}
-
-input:checked + label:after {
-	margin-left: 0.5em;
 }
 
 input:checked + label {
@@ -521,8 +520,6 @@ aside{
 aside > div{
 	display: flex;
 	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: flex-start;
 }
 
 aside > div.title{
@@ -576,11 +573,15 @@ div.mostPopular div.info{
 	width: 100%;
 }
 
+
+
 #resultsSearchActivities > div {
 	display: grid;
 	grid-gap: 40px;
 	grid-template-columns: repeat(4,1fr);
 }
+
+
 
 .activity {
 	box-sizing: border-box;
