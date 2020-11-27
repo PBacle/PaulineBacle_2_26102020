@@ -27,7 +27,7 @@ header{
 }
 
 header img{
-	width:100px;
+	width:200px;
 }
 
 nav{
@@ -190,7 +190,6 @@ button span.fas{
 		display: none;
 	}
 }
-
 
 button:hover {
 	border-right-style: outset;
