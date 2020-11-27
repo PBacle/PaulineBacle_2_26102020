@@ -748,7 +748,7 @@ div.mostPopular div.info{
 		left:0;
 		top:100px;
 		width: 100%;
-		height:40px;
+		min-height:40px;
 		padding: 0;
 		box-sizing: border-box;
 	}
