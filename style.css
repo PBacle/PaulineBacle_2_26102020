@@ -428,18 +428,18 @@ h2 + span{
 
 .hotel, .activity{
 	box-sizing: border-box;
-	max-height: 200px;
 	background-color: white;
 	box-shadow: 2px 5px 5px rgba(0,0,0,0.1); 
 	border-radius: 15px;
 	border : 6px transparent solid;
+	height: 200px;
 }
 
 .hotel img{
     display: block;
 	border-radius: 10px 10px 0  0;
 	object-fit: cover;
-    max-height: 60%;
+    height: 60%;
 	width: 100%;
 }
 
